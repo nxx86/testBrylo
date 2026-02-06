@@ -213,8 +213,8 @@ body {
 /* Neon button */
 .neon-button {
   position: relative;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   color: white;
@@ -224,6 +224,19 @@ body {
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .neon-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .neon-button {
+    padding: 0.875rem 1.75rem;
+  }
 }
 
 .neon-button:hover {

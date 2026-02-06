@@ -19,7 +19,11 @@ export default function ProductShowcase() {
     >
       <div className="max-w-6xl mx-auto px-8 relative left-1/2 transform -translate-x-1/2">
         {/* Section Header */}
-        <div className="text-center mb-20" data-aos="fade-up">
+        <div
+          className="text-center mb-20"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <p className="text-[#b5d7e0] text-sm tracking-[0.3em] uppercase mb-4 font-medium">
             Discover
           </p>
@@ -39,6 +43,7 @@ export default function ProductShowcase() {
           <div
             className="w-full max-w-md lg:flex-shrink-0"
             data-aos="fade-right"
+            data-aos-duration="1000"
             data-aos-delay="200"
           >
             <div className="relative w-full h-[550px] rounded-3xl overflow-hidden shadow-2xl">
@@ -84,8 +89,9 @@ export default function ProductShowcase() {
 
           {/* Product Info — right side */}
           <div
-            className="flex-1 max-w-xl"
+            className="flex-1 max-w-xl text-center lg:text-left"
             data-aos="fade-left"
+            data-aos-duration="1000"
             data-aos-delay="400"
           >
             <span className="text-[#f54038] text-sm tracking-[0.2em] uppercase font-medium">
@@ -122,7 +128,7 @@ export default function ProductShowcase() {
               ))}
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center lg:justify-start">
               <a href="#contact" className="neon-button">
                 Order Now
               </a>

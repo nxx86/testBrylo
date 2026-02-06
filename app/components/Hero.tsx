@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 
 const slides = [
+  { image: "/images/allcapsules.jpg" },
   { image: "/images/pubfinal.png" },
   { image: "/images/pubclothes.png" },
   { image: "/images/pubfloor.png" },
@@ -62,27 +63,40 @@ export default function Hero() {
 
       {/* Content Container */}
       <div className="relative z-20 h-full">
-        <div className="max-w-6xl mx-auto px-8 h-full relative left-1/2 -translate-x-1/2 ">
-          <div className="flex items-end justify-between h-full pb-20">
-            {/* Left — Title */}
-            <div>
-              <h1 className="font-inter text-4xl md:text-5xl lg:text-[3.5rem] font-semibold text-white leading-[1.15] drop-shadow-lg max-w-xl">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 h-full relative left-1/2 -translate-x-1/2">
+          <div className="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-between h-full pb-12 sm:pb-16 md:pb-20 gap-8 md:gap-0">
+            {/* Title */}
+            <div
+              className="text-center md:text-left mt-auto md:mt-0"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h1 className="font-inter text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-semibold text-white leading-[1.15] drop-shadow-lg max-w-xl">
                 One soap. Infinite
                 <br />
                 cleaning solutions.
               </h1>
             </div>
 
-            {/* Right — Buttons */}
-            <div className="flex flex-col items-end gap-4">
-              <div className="flex gap-4">
-                <a href="#collection" className="neon-button">
-                  How it works
-                </a>
-                <a href="#about" className="neon-button neon-button-outline">
-                  See features
-                </a>
-              </div>
+            {/* Buttons */}
+            <div
+              className="flex flex-col sm:flex-row items-center md:items-end gap-3 sm:gap-4"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <a
+                href="#collection"
+                className="neon-button w-full sm:w-auto text-center"
+              >
+                How it works
+              </a>
+              <a
+                href="#about"
+                className="neon-button neon-button-outline w-full sm:w-auto text-center"
+              >
+                See features
+              </a>
             </div>
           </div>
         </div>

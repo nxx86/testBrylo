@@ -15,7 +15,11 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-8 relative z-10 left-1/2 transform -translate-x-1/2">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           {/* Image */}
-          <div className="relative w-full max-w-lg" data-aos="fade-right">
+          <div
+            className="relative w-full max-w-lg"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-xl shadow-[#b5d7e0]/10">
               <Image
                 src="/images/brylo vision.png"
@@ -28,7 +32,12 @@ export default function About() {
           </div>
 
           {/* Content */}
-          <div className="flex-1" data-aos="fade-left" data-aos-delay="200">
+          <div
+            className="flex-1 text-center lg:text-left"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <p className="text-[#b5d7e0] text-sm tracking-[0.3em] uppercase mb-4 font-semibold">
               Our Story
             </p>
@@ -56,9 +65,10 @@ export default function About() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-4"
+                  className="flex items-center justify-center lg:justify-start gap-4"
                   data-aos="fade-left"
-                  data-aos-delay={300 + index * 100}
+                  data-aos-duration="1000"
+                  data-aos-delay={400 + index * 150}
                 >
                   <span className="text-[#f54038] font-bold text-lg min-w-[60px]">
                     {item.year}

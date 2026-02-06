@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 md:py-20 lg:py-24 relative left-1/2 -translate-x-1/2 pt-[50px] px-[50px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-16">
           {/* Brand */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-8" data-aos="fade-right" data-aos-duration="1000">
             <Link href="#home" className="flex items-center gap-3 group w-fit">
               <div className="relative w-10 h-10 overflow-hidden rounded-full ring-2 ring-gray-700 group-hover:ring-[#b5d7e0] transition-all duration-300">
                 <Image
@@ -89,8 +89,8 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          {Object.entries(footerLinks).map(([title, links]) => (
-            <div key={title}>
+          {Object.entries(footerLinks).map(([title, links], index) => (
+            <div key={title} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index * 150}>
               <h4 className="text-white font-semibold tracking-wider uppercase text-sm mb-6">
                 {title}
               </h4>
